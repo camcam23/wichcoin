@@ -35,7 +35,7 @@ bool AppInit(int argc, char* argv[])
         //
         // Parameters
         //
-        // If Qt is used, parameters/abccoin.conf are parsed in qt/bitcoin.cpp's main()
+        // If Qt is used, parameters/wichcoin.conf are parsed in qt/bitcoin.cpp's main()
         ParseParameters(argc, argv);
         if (!boost::filesystem::is_directory(GetDataDir(false)))
         {
@@ -47,7 +47,7 @@ bool AppInit(int argc, char* argv[])
         if (mapArgs.count("-?") || mapArgs.count("--help"))
         {
             // First part of help message is specific to abccoind / RPC client
-            std::string strUsage = _("ABCCoin version") + " " + FormatFullVersion() + "\n\n" +
+            std::string strUsage = _("WICHCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  abccoind [options]                     " + "\n" +
                   "  abccoind [options] <command> [params]  " + _("Send command to -server or abccoind") + "\n" +
@@ -62,7 +62,7 @@ bool AppInit(int argc, char* argv[])
 
         // Command-line RPC
         for (int i = 1; i < argc; i++)
-            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "abccoin:"))
+            if (!IsSwitchChar(argv[i][0]) && !boost::algorithm::istarts_with(argv[i], "wichcoin:"))
                 fCommandLine = true;
 
         if (fCommandLine)

@@ -1,7 +1,7 @@
 src/*.exe
 src/wichcoin
-src/wichcoind
-src/test_wichcoin
+src/abccoind
+src/test_abccoin
 .*.swp
 *.*~*
 *.bak
