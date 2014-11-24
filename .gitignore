@@ -1,7 +1,7 @@
 src/*.exe
-src/abccoin
-src/abccoind
-src/test_abccoin
+src/wichcoin
+src/wichcoind
+src/test_wichcoin
 .*.swp
 *.*~*
 *.bak
@@ -9,17 +9,17 @@ src/test_abccoin
 *.orig
 *.o
 *.patch
-.abccoin
+.wichcoin
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-abccoin-qt
-abcCoin-Qt.app
+wichcoin-qt
+wichCoin-Qt.app
 
 # Unit-tests
 Makefile.test
-abccoin-qt_test
+wichcoin-qt_test
 
 # Resources cpp
 qrc_*.cpp
